@@ -1,5 +1,3 @@
-# For this notebook to run with updated APIs, we need torch 1.12+ and torchvision 0.13+
-
 import os
 import pathlib
 from PIL import Image
@@ -19,7 +17,7 @@ from torch.utils.data import Dataset
 from torchinfo import summary
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-image_path="C:\\Users\\soula\\Downloads\\archive\\dataset"
+image_path="/data"
 image_train=image_path+"/train"
 image_test=image_path+"/test"
 
